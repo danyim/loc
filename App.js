@@ -19,7 +19,7 @@ export default class App extends React.Component {
         // console.log(`Longitude: ${crd.longitude}`)
         // console.log(`More or less ${crd.accuracy} meters.`)
         this.setState({
-          message: `lat: ${crd.latitude}, lon: ${crd.longitude}, accuracy: ${crd.accuracy}m`
+          message: `la: ${crd.latitude}, ln: ${crd.longitude}, acc: ${crd.accuracy}m`
         })
       },
       () => {
@@ -44,7 +44,7 @@ export default class App extends React.Component {
                 {this.state.message}
               </Text>}
           </Text>
-          <Button title="Get Location" onPress={this.getLoc} />
+          <Button title="Locate me" onPress={this.getLoc} />
         </View>
       </View>
     )
